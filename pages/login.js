@@ -27,7 +27,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault()
     const data = {email, password }
-    let res = await fetch(`${process.env.NEXT_PUBLIC_HOST}/api/signup`, {
+    let res = await fetch("https://login-jet-one.vercel.app/api/login", {
       method: 'POST', // or 'PUT'
       headers: {
         'Content-Type': 'application/json',
